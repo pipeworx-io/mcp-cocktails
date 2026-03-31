@@ -1,13 +1,3 @@
-/**
- * Cocktails MCP — TheCocktailDB API (free, no auth)
- *
- * Tools:
- * - search_cocktails: search cocktails by name
- * - get_cocktail: full details for a cocktail by ID
- * - random_cocktail: a random cocktail
- * - cocktails_by_ingredient: cocktails that use a specific ingredient
- */
-
 interface McpToolDefinition {
   name: string;
   description: string;
@@ -22,6 +12,17 @@ interface McpToolExport {
   tools: McpToolDefinition[];
   callTool: (name: string, args: Record<string, unknown>) => Promise<unknown>;
 }
+
+/**
+ * Cocktails MCP — TheCocktailDB API (free, no auth)
+ *
+ * Tools:
+ * - search_cocktails: search cocktails by name
+ * - get_cocktail: full details for a cocktail by ID
+ * - random_cocktail: a random cocktail
+ * - cocktails_by_ingredient: cocktails that use a specific ingredient
+ */
+
 
 const BASE_URL = 'https://www.thecocktaildb.com/api/json/v1/1';
 
