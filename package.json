@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-cocktails",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Cocktails MCP — TheCocktailDB API (free, no auth)",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-7cec43132c4a62608fd1e745f4eabe7a910ccbc9dae4309f2a2bcf2a732fc53c",
-    "sourceCommit": "60f04b68c347e970c6be94a53439d1364061fc06"
+    "sourceHash": "v1-a831be4781ce8b46916e255d89fd11012c70c51338379121936c2c077e47798a",
+    "sourceCommit": "5b29c2b0c11e1fcd954969a245b474e6e9475116"
   }
 }
