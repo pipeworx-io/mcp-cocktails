@@ -1,0 +1,58 @@
+[
+  {
+    "name": "search_cocktails",
+    "description": "Search TheCocktailDB for cocktail recipes by name. Returns name, category, alcoholic/non-alcoholic classification, glassware, thumbnail, and ingredient list with measurements (no preparation instructions — use get_cocktail for those).",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Cocktail name or partial name to search for"
+        }
+      },
+      "required": [
+        "query"
+      ]
+    }
+  },
+  {
+    "name": "get_cocktail",
+    "description": "Get full cocktail recipe by ID. Returns ingredients with exact measurements, preparation steps, glassware type, and garnish.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "TheCocktailDB cocktail ID (e.g., \"11007\")"
+        }
+      },
+      "required": [
+        "id"
+      ]
+    }
+  },
+  {
+    "name": "random_cocktail",
+    "description": "Get a random cocktail recipe. Returns ingredients with measurements, instructions, glassware, and garnish details.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  },
+  {
+    "name": "cocktails_by_ingredient",
+    "description": "List all TheCocktailDB cocktails that contain a specific ingredient (e.g., 'vodka', 'lime juice'). Returns cocktail id, name, and thumbnail only — use get_cocktail to retrieve full recipes.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "ingredient": {
+          "type": "string",
+          "description": "Ingredient name to filter by (e.g., \"vodka\", \"gin\")"
+        }
+      },
+      "required": [
+        "ingredient"
+      ]
+    }
+  }
+]
