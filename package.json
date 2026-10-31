@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-cocktails",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Cocktails MCP — TheCocktailDB API (free, no auth)",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "cocktails",
     "gatewaySlug": "cocktails",
-    "sourceHash": "v1-3fd3ab8c7036473a92a2de6dfa1c144a3922431b32fab7b991132fdccecd078d",
-    "sourceCommit": "4277282d72f9bf55e548b3799aaf737baf22152f"
+    "sourceHash": "v1-cf326f6fcc85691cce5b78359ca59aca1b8a5785f9b2684d57991a860638719b",
+    "sourceCommit": "8cc978183948532674e797c429305c9d8ab2a1c3"
   }
 }
